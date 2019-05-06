@@ -1,0 +1,19 @@
+{ //https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-host-json
+  "version": "2.0",
+  "functionTimeout": "00:05:00",
+  "extensions": {
+    "cosmosDb": {},
+    "durableTask": { // https://docs.microsoft.com/ja-jp/azure/azure-functions/durable/durable-functions-bindings#host-json
+      "hubName": "DurableFunctionsV2Learning",
+      "maxQueuePollingInterval": "00:00:05", // 警告が出るが、MSのDocument上は使用できることになっている
+      "trackingStoreNamePrefix": "DFv2LearningTask" // 警告が出るが、MSのDocument上は使用できることになっている
+    },
+    "eventHubs": {},
+    "http": {
+      "routePrefix": "learming"
+    },
+    "queues": {},
+    "sendGrid": {},
+    "serviceBus": {}
+  }
+}
