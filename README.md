@@ -7,6 +7,6 @@
 * 「routePrefix」「hubName」「trackingStoreNamePrefix」を使用して、複数Functionsによる環境統合を図れるようにする
 
 #### 今後の予定
-1. Starter業務ロジックをいくつかのパタンで実装してみる
+1. Starter業務ロジックをいくつかのパターンで実装してみる
 2. 「Orchestration」「SubOrchestration」を実装して飲る
 3. 「Activity」の共有化などを検証してみる
